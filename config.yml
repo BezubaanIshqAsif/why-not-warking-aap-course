@@ -1,0 +1,16 @@
+title: Why Not Warking aap
+description: my Application not warking can you asked me
+template:
+  repo: why-not-warking-aap-template
+  name: why-not-warking-aap
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
